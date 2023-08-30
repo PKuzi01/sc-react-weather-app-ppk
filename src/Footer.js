@@ -14,7 +14,7 @@ function Footer() {
         </a>
         and is
         <a
-          href="https://github.com/PKuzi01/sc-project"
+          href="https://github.com/PKuzi01/sc-react-weather-app-ppk"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -22,7 +22,7 @@ function Footer() {
         </a>
         and
         <a
-          href="https://weather-app-ppk.netlify.app/"
+          href="https://sc-react-weather-app-ppk.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
         >
