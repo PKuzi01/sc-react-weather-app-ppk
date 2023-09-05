@@ -14,12 +14,6 @@ li {
     color: #aba8b4;
 }
 
-.weatherInfo {
-    margin-top: 60px;
-    font-family: "Montserrat", sans-serif;
-    margin-bottom: 30px;
-}
-
 .description {
     text-transform: capitalize;
 }

@@ -11,6 +11,7 @@ function SearchForm() {
               type="search"
               placeholder="Enter a city..."
               className="form-control search-input"
+              autoFocus="on"
               id="city-input"
             />
           </div>

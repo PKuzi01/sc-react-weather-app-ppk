@@ -3,7 +3,7 @@ import "./WeatherInfo.css";
 
 function WeatherInfo() {
   return (
-    <div className="WeatherInfo">
+    <div className="WeatherInfo mt-3 mb-2">
       <div className="row">
         <div className="col-7">
           <h1 id="city">[City Name]</h1>
