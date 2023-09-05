@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div className="Footer">
       <footer>
-        Coded by:
+        Coded by:{" "}
         <a
           href="https://www.linkedin.com/in/philisizwe-kuzwayo-3116541a8/"
           target="_blank"
@@ -13,7 +13,7 @@ function Footer() {
         >
           Philisizwe Kuzwayo
         </a>
-        and is
+        {" "}and is{" "}
         <a
           href="https://github.com/PKuzi01/sc-react-weather-app-ppk"
           target="_blank"
@@ -21,7 +21,7 @@ function Footer() {
         >
           open-sourced on GitHub
         </a>
-        and
+        {" "}and{" "}
         <a
           href="https://sc-react-weather-app-ppk.netlify.app/"
           target="_blank"
