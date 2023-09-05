@@ -9,17 +9,17 @@ function WeatherInfo() {
           <h1 id="city">[City Name]</h1>
           <ul>
             <li>
-              <span id="date">Day, HH:MM,</span>
+              <span id="date">Day,{" "}HH:MM,</span>
               <span className="description" id="description">
-                description
+              {" "}description
               </span>
             </li>
             <li>
               <span>
                 Humidity:
-                <strong id="humidity">[no]%</strong>
+                <strong id="humidity">{" "}[no]%{" "}</strong>
                 Wind:
-                <strong id="wind">[no]km/h</strong>
+                <strong id="wind">{" "}[no]km/h{" "}</strong>
               </span>
             </li>
           </ul>
@@ -31,7 +31,7 @@ function WeatherInfo() {
                 src="#"
                 id="current-icon"
                 className="weatherIcon"
-                alt="weatherimg"
+                alt="weather-img"
               />
               <span className="temperature" id="current-temp">
                 12
