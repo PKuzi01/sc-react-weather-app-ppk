@@ -1,45 +1,8 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
-}
-
 body {
   background-color: #f3f1f9;
 }
 
-form {
-  border-bottom: 1px solid #f9f7fe;
-  margin-top: 60px;
-  padding-bottom: 30px;
-}
-
-h1 {
-  color: #263849;
-  font-weight: bolder;
-  margin-left: 30px;
-}
-
-li {
-  list-style: none;
-  color: #aba8b4;
-}
-
-strong {
-  color: #41506b;
-  font-weight: 500;
-}
-
-footer {
-  color: rgba(39, 33, 66, 0.4);
-  font-size: 14px;
-  line-height: 18px;
-  margin-top: 40px;
-  text-align: center;
-}
-footer a {
-  color: #006466;
-}
-.app {
+.App {
   margin: 60px auto;
   max-width: 800px;
 }
@@ -52,117 +15,8 @@ footer a {
   background-color: #a2f0d9;
   box-shadow: 10px 10px 15px #adcdce;
 }
+
 .row {
   margin-right: 10px;
 }
 
-.search-input {
-  background: #f9f7fe;
-  border: none;
-  border-radius: 6px;
-  color: rgba(39, 33, 66, 0.4);
-  display: inline-block;
-  font-size: 16px;
-  height: 50px;
-  line-height: 20px;
-  padding: 15px 20px;
-}
-
-.btn {
-  background: #4c8896;
-  border: none;
-  font-size: 16px;
-  font-weight: 700;
-  height: 50px;
-  padding: 15px 0;
-}
-
-.btn:hover {
-  background: #f9f7fe;
-  color: #4c8896;
-}
-
-.description {
-  text-transform: capitalize;
-}
-
-.weatherInfo {
-  margin-top: 60px;
-  font-family: "Montserrat", sans-serif;
-  margin-bottom: 30px;
-}
-
-.weatherIcon {
-  font-size: 50px;
-  margin: 10px 0;
-}
-
-.temperature {
-  color: #000;
-  font-size: 55px;
-  font-weight: 700;
-  line-height: 1;
-  margin-left: 10px;
-}
-
-.unit {
-  color: #000;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 36px;
-  line-height: 1;
-  position: relative;
-  top: -34px;
-}
-
-.fahrenheit {
-  color: #000000;
-  cursor: default;
-  text-decoration: none;
-}
-
-.fahrenheit:hover {
-  color: #2c8fcc;
-  text-decoration: underline;
-}
-
-.weatherForecast {
-  border-bottom: 1px solid #f9f7fe;
-  margin: 40px 0;
-  padding-bottom: 50px;
-  text-align: center;
-}
-
-.forecastTime {
-  color: rgba(39, 33, 66, 0.4);
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-}
-
-.weatherForecastIcon {
-  display: block;
-  margin: 20px auto;
-  font-size: 30px;
-}
-
-.fiveDay {
-  color: #41506b;
-  font-size: 18apx;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.5;
-}
-
-.fiveDayIcon {
-  margin-bottom: 10px;
-}
-
-.fiveDayMin {
-  opacity: 0.6;
-}
-
-.dateForecast {
-  font-size: 20px;
-  color: #263849;
-}

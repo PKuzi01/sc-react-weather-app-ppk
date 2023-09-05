@@ -1,0 +1,40 @@
+.weatherForecast {
+    border-bottom: 1px solid #f9f7fe;
+    margin: 40px 0;
+    padding-bottom: 50px;
+    text-align: center;
+}
+  
+.forecastTime {
+    color: rgba(39, 33, 66, 0.4);
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+}
+  
+.weatherForecastIcon {
+    display: block;
+    margin: 20px auto;
+    font-size: 30px;
+}
+  
+.fiveDay {
+    color: #41506b;
+    font-size: 18apx;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5;
+}
+  
+.fiveDayIcon {
+    margin-bottom: 10px;
+}
+  
+.fiveDayMin {
+    opacity: 0.6;
+}
+  
+.dateForecast {
+    font-size: 20px;
+    color: #263849;
+}
