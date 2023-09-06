@@ -51,3 +51,8 @@ li {
     color: #2c8fcc;
     text-decoration: underline;
 }
+
+.loader {
+    width: 25%;
+    margin: 30px auto;
+}
