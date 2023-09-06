@@ -14,6 +14,10 @@ function UnitConversion(props) {
         setUnit("celsius");
     }
 
+    function fahrenheitTemp() {
+        return Math.round((props.celsius * 9 / 5) + 32);
+    }
+
     if(unit === "celsius") {
         return (
             <span>
@@ -26,11 +30,10 @@ function UnitConversion(props) {
             </span>
         );
     } else {
-        let fahrenheitTemp = Math.round((props.celsius * 9 / 5) + 32);
         return (
             <span>
                 <span className="temperature" id="current-temp">
-                    {fahrenheitTemp}
+                    {fahrenheitTemp()}
                 </span>
                 <span className="unit">
                     <sup><a href="/" className="fahrenheit" onClick={convertToCelsius}>°C</a> | °F</sup>
