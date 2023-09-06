@@ -3,9 +3,8 @@ import axios from "axios";
 import "./WeatherInfo.css";
 import {Puff} from 'react-loader-spinner';
 
-function WeatherInfo() {
-  const [loaded, setLoad] = useState(false);
-  const [details, setDetails] = useState(null);
+function WeatherInfo(props) {;
+  const [details, setDetails] = useState({loaded: false});
 
   function handleResponse(response) {
     console.log(response.data);
@@ -18,13 +17,13 @@ function WeatherInfo() {
       icon: response.data.condition.icon_url,
       iconAttr: response.data.condition.icon,
       temp: Math.round(response.data.temperature.current),
+      loaded: true,
     });
-    setLoad(true);
   }
 
   
 
-  if(loaded) {
+  if(details.loaded) {
       return (
       <div className="WeatherInfo mt-3 mb-2">
         <div className="row">
@@ -56,7 +55,7 @@ function WeatherInfo() {
                   src={details.icon}
                   id="current-icon"
                   className="weatherIcon"
-                  alt="weather-img"
+                  alt={details.iconAttr}
                 />
                 <span className="temperature" id="current-temp">
                   {details.temp}
@@ -71,9 +70,8 @@ function WeatherInfo() {
       </div>
     );
   } else {
-    let city = `Johannesburg`;
     const apiKey = `9a96e3865c186c9fbo4aaef0cdb0e0dt`;
-    const apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
+    const apiUrl = `https://api.shecodes.io/weather/v1/current?query=${props.defaultCity}&key=${apiKey}`;
     axios.get(apiUrl).then(handleResponse);
     
 

@@ -15,7 +15,7 @@ function App() {
           rel="stylesheet"
         />
         <SearchForm />
-        <WeatherInfo />
+        <WeatherInfo defaultCity="Johannesburg"/>
         <WeatherForecast/>
         <Footer />
     </div>
