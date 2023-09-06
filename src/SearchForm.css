@@ -29,3 +29,13 @@ form {
     background: #f9f7fe;
     color: #4c8896;
 }
+
+@media (max-width: 450px) {
+    .btn {
+        padding: 15px 5px;
+    }
+
+    .col-9, .col-3 {
+        padding: 0 5px;
+    }
+}
