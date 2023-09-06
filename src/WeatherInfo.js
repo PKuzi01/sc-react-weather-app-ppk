@@ -1,7 +1,9 @@
 import React, {useState} from "react";
+import FormattedDate from './FormattedDate';
 import axios from "axios";
 import "./WeatherInfo.css";
 import {Puff} from 'react-loader-spinner';
+
 
 function WeatherInfo(props) {;
   const [details, setDetails] = useState({loaded: false});
@@ -12,7 +14,7 @@ function WeatherInfo(props) {;
       description: response.data.condition.description,
       humidity: response.data.temperature.humidity,
       wind: Math.round(response.data.wind.speed),
-      // date: new Date(response.data.dt*1000),
+      date: new Date(response.data.time * 1000),
       city: response.data.city,
       icon: response.data.condition.icon_url,
       iconAttr: response.data.condition.icon,
@@ -31,7 +33,7 @@ function WeatherInfo(props) {;
             <h1 id="city">{details.city}</h1>
             <ul>
               <li>
-                <span id="date">Date {" "}</span>
+                <FormattedDate date={details.date} />
               </li>
               <li>
               <span className="description" id="description">
