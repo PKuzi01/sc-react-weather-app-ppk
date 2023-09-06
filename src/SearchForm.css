@@ -31,6 +31,9 @@ form {
 }
 
 @media (max-width: 450px) {
+    form {
+        margin-top: 25px;
+    }
     .btn {
         padding: 15px 5px;
     }
