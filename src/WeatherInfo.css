@@ -49,4 +49,8 @@ li {
         height: 75px;
         margin-top: 20px;
     }
+
+    .col-7, .col-5 {
+        padding: 0px 0px;
+    }
 }
