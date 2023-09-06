@@ -1,6 +1,5 @@
 import './App.css';
 import SearchForm from "./SearchForm";
-import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
 import Footer from "./Footer";
 
@@ -14,8 +13,7 @@ function App() {
           href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap"
           rel="stylesheet"
         />
-        <SearchForm />
-        <WeatherInfo defaultCity="Johannesburg"/>
+        <SearchForm defaultCity="Johannesburg"/>
         <WeatherForecast/>
         <Footer />
     </div>
