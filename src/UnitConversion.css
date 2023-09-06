@@ -25,3 +25,15 @@
 .fahrenheit:hover {
     color: #4c8896;
 }
+
+
+@media (max-width: 450px) {
+    .temperature {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    .unit {
+        font-size: 10px;
+    }
+}

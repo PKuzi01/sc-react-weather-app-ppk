@@ -11,16 +11,16 @@ function WeatherInfo(props) {
         <div className="col-7">
           <h1 id="city">{props.data.city}</h1>
           <ul>
-            <li>
+            <li className="weatherDetails">
               <FormattedDate date={props.data.date} />
             </li>
             <li>
-            <span className="description" id="description">
+            <span className="description weatherDetails" id="description">
               {props.data.description}
               </span>
             </li>
             <li>
-              <span>
+              <span className="weatherDetails">
                 Humidity:
                 <strong id="humidity">{" "}{props.data.humidity}%{" "}</strong>
                 Wind:
@@ -30,7 +30,6 @@ function WeatherInfo(props) {
           </ul>
         </div>
         <div className="col-5 justify-content-end">
-          <div className="temperatureContainer">
             <div className="weatherContainer">
               <img
                 src={props.data.icon}
@@ -40,7 +39,6 @@ function WeatherInfo(props) {
               />
               <UnitConversion celsius={props.data.temp} />
             </div>
-          </div>
         </div>
       </div>
     </div>

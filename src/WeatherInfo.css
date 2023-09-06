@@ -27,3 +27,26 @@ li {
     width: 25%;
     margin: 30px auto;
 }
+
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: 23px
+    }
+
+    .weatherContainer {
+        width: 75%;
+        margin: 0px auto;
+    }
+
+    .weatherDetails {
+        font-size: 14px;
+    }
+
+    .weatherIcon {
+        font-size: 30px;
+        width: 75px;
+        height: 75px;
+        margin-top: 20px;
+    }
+}
