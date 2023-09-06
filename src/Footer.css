@@ -9,3 +9,11 @@ footer {
 footer a {
     color: #006466;
 }
+
+
+@media (max-width: 450px) {
+    footer {
+        font-size: 10px;
+        line-height: 12px;
+    }
+}
