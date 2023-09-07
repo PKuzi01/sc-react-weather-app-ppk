@@ -1,7 +1,8 @@
 import React, {useState} from "react";
-import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 import "./SearchForm.css";
+import axios from "axios";
 import {Puff} from 'react-loader-spinner';
 
 
@@ -10,7 +11,7 @@ function SearchForm(props) {;
   const[city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
-    // console.log(response.data);
+    //console.log(response.data);
     setDetails({
       description: response.data.condition.description,
       humidity: response.data.temperature.humidity,
@@ -21,6 +22,7 @@ function SearchForm(props) {;
       iconAttr: response.data.condition.icon,
       temp: Math.round(response.data.temperature.current),
       loaded: true,
+      coords: response.data.coordinates,
     });
   }
 
@@ -65,6 +67,7 @@ function SearchForm(props) {;
               </div>
             </form>
             <WeatherInfo data={details}/>
+            <WeatherForecast coords={details.coords}/>
           </div>
 
     );

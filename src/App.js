@@ -1,6 +1,5 @@
 import './App.css';
 import SearchForm from "./SearchForm";
-import WeatherForecast from "./WeatherForecast";
 import Footer from "./Footer";
 
 function App() {
@@ -14,7 +13,6 @@ function App() {
           rel="stylesheet"
         />
         <SearchForm defaultCity="Johannesburg"/>
-        <WeatherForecast/>
         <Footer />
     </div>
   </div>
