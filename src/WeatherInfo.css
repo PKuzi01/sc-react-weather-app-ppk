@@ -31,7 +31,7 @@ li {
 
 @media (max-width: 450px) {
     h1 {
-        font-size: 23px
+        font-size: 24px
     }
 
     .weatherContainer {
@@ -40,7 +40,7 @@ li {
     }
 
     .weatherDetails {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .weatherIcon {
