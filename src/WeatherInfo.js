@@ -29,7 +29,7 @@ function WeatherInfo(props) {
             </li>
           </ul>
         </div>
-        <div className="col-5 justify-content-end">
+        <div className="col-5">
             <div className="weatherContainer">
               <img
                 src={props.data.icon}

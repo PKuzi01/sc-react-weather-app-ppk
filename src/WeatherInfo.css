@@ -34,6 +34,8 @@ li {
         font-size: 24px
     }
 
+
+
     .weatherContainer {
         width: 75%;
         margin: 0px auto;
@@ -45,9 +47,9 @@ li {
 
     .weatherIcon {
         font-size: 30px;
-        width: 80px;
-        height: 80px;
-        margin: 20px;
+        width: 85px;
+        height: 85px;
+        margin: 0px 20px 35px 20px;
     }
 
     .col-7, .col-5 {
