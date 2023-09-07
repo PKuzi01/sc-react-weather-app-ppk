@@ -24,7 +24,7 @@ function WeatherForecast(props) {
         {forecast.map(function(dailyForecast, index) {
           if (index < 5) {
             return (
-              <div className="col p-2" key={index}>
+              <div className="col p-2 m-2" key={index}>
                 <WeatherForecastDay data={dailyForecast} /> 
               </div>
             );

@@ -1,0 +1,16 @@
+  
+.fiveDay {
+    color: #41506b;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5;
+}
+  
+.fiveDayIcon {
+    margin-bottom: 10px;
+}
+  
+.fiveDayMin {
+    opacity: 0.6;
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import './WeatherForecastDay.css'
 
 
 function WeatherForecastDay(props) {
@@ -37,7 +38,7 @@ function WeatherForecastDay(props) {
             {day()}
           </p>
           <img src={icon()}id="icon" className="fiveDayIcon" width="50" alt={iconAlt()}/>
-          <div className="fiveDay1" />
+          <div className="fiveDay" />
               <span id="five-day-max">
                 {maxTemp()}
               </span>
