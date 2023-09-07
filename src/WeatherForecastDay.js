@@ -34,15 +34,15 @@ function WeatherForecastDay(props) {
 
     return (
         <div>
-          <p className="dateForecast" id="date-forecast">
+          <p className="dateForecast">
             {day()}
           </p>
-          <img src={icon()}id="icon" className="fiveDayIcon" width="50" alt={iconAlt()}/>
+          <img src={icon()}className="fiveDayIcon" width="50" alt={iconAlt()}/>
           <div className="fiveDay" />
-              <span id="five-day-max">
+              <span>
                 {maxTemp()}
               </span>
-              <span id="five-day-min" className="fiveDayMin">
+              <span className="fiveDayMin">
                 {" "}{minTemp()}
               </span>
           </div>  

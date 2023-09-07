@@ -21,7 +21,7 @@ function UnitConversion(props) {
     if(unit === "celsius") {
         return (
             <span>
-                <span className="temperature" id="current-temp">
+                <span className="temperature">
                     {props.celsius}
                 </span>
                 <span className="unit">
@@ -32,7 +32,7 @@ function UnitConversion(props) {
     } else {
         return (
             <span>
-                <span className="temperature" id="current-temp">
+                <span className="temperature">
                     {fahrenheitTemp()}
                 </span>
                 <span className="unit">

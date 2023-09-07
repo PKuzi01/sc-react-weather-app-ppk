@@ -9,22 +9,22 @@ function WeatherInfo(props) {
     <div className="WeatherInfo mt-3 mb-2">
       <div className="row">
         <div className="col-7">
-          <h1 id="city">{props.data.city}</h1>
+          <h1>{props.data.city}</h1>
           <ul>
             <li className="weatherDetails">
               <FormattedDate date={props.data.date} />
             </li>
             <li>
-            <span className="description weatherDetails" id="description">
+            <span className="description weatherDetails">
               {props.data.description}
               </span>
             </li>
             <li>
               <span className="weatherDetails">
                 Humidity:
-                <strong id="humidity">{" "}{props.data.humidity}%{" "}</strong>
+                <strong>{" "}{props.data.humidity}%{" "}</strong>
                 Wind:
-                <strong id="wind">{" "}{props.data.wind}km/h</strong>
+                <strong>{" "}{props.data.wind}km/h</strong>
               </span>
             </li>
           </ul>
@@ -33,7 +33,6 @@ function WeatherInfo(props) {
             <div className="weatherContainer">
               <img
                 src={props.data.icon}
-                id="current-icon"
                 className="weatherIcon"
                 alt={props.data.iconAttr}
               />

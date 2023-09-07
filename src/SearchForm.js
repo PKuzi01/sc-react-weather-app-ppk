@@ -44,7 +44,7 @@ function SearchForm(props) {;
   if(details.loaded) {
       return (
           <div className="SearchForm">
-            <form id="search-form" onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit}>
               <div className="row">
                 <div className="col-9">
                   <input
@@ -52,7 +52,6 @@ function SearchForm(props) {;
                     placeholder="Enter a city..."
                     className="form-control search-input"
                     autoFocus="on"
-                    id="city-input"
                     onChange={handleCityChange}
                   />
                 </div>
@@ -61,7 +60,6 @@ function SearchForm(props) {;
                     type="submit"
                     value="Search"
                     className="btn btn-primary w-100"
-                    id="search-button"
                   />
                 </div>
               </div>
