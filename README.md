@@ -13,6 +13,8 @@ Very challenging, but the most fun because I was enthused to learn about React. 
 
 ##### Skills acquired:
 * React.js
-* npm
-* The use of the terminal
 * Node.js
+* npm
+* API intergration
+* The use of the terminal
+
